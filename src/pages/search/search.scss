@@ -1,0 +1,64 @@
+page-search {
+    .login-content {
+      background: white;
+   
+      .login-box {
+        background: white;
+        padding: 20px 20px 0px 20px;
+        margin-top: 30px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .icons-left {
+        -moz-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        margin-bottom: 150px;
+        margin-left: 10px;
+      }
+
+      .icons-right {
+        -moz-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        margin-bottom: 150px;
+        margin-left: -10px;
+      }
+   
+      ion-row {
+         align-items: center;
+         text-align: center;
+       }
+   
+       ion-item {
+           border-radius: 30px !important;
+           padding-left: 30px !important;
+           font-size: 0.9em;
+           margin-bottom: 10px;
+           border: 1px solid gray;
+           border-bottom: 0px !important;
+           box-shadow: none !important;
+       }
+   
+       .signup-col {
+         margin: 0px 16px 0px 16px;
+         padding-bottom: 20px;
+       }
+   
+       .item-inner {
+         border-bottom-color: #ffffff !important;
+         box-shadow: none !important;
+       }
+   
+       .submit-btn {
+         background: #00adef;
+         border-radius: 30px !important;
+         border: 1px solid #ffffff;
+       }
+    }
+  }

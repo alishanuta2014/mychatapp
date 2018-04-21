@@ -1,0 +1,104 @@
+page-my-profile {
+
+    ion-app.md [padding] .scroll-content {
+        padding: 0;
+    }
+
+    ion-row {
+        padding: 0;
+        background-color: cadetblue;
+        color:white;
+
+        .col{
+            padding: 0;
+            
+        }
+    }
+    .user-flag{
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .user-fullname{
+        font-size: 20px;
+    }
+
+    .top-row-1{
+        padding: 10px;
+        height: 30%;
+        font-size: 10px;
+    }
+    
+    
+    .user-info-row{
+        font-size: x-small;
+        ion-col{
+            padding: 10px;
+        }
+    }
+
+    .info-title{
+        margin-bottom: 3px;
+    }
+
+    .user-country-info{
+        padding-left: 10px;
+        img{
+            padding-left: 10px;
+        }
+    }
+
+    .user-role{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .main-action-buttons{
+        width: 100%;
+        color: white;
+        border-color: wheat;
+        margin: 10px;
+    }
+    
+    .main-action-buttons:active{
+        background: lightblue;
+    }
+
+    .ratings {
+        margin-left: 20px;
+        margin-top: 10px;
+
+        .checked {
+            color: orange;
+        }
+
+        .fa-star{
+            font-size: 12px;
+        }
+    }
+
+    .rating-amount {
+        margin-left: 20px;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .UserBio{
+        padding: 10px;
+        border-top: 1px solid wheat;
+    }
+
+    .user-pics{
+        border: 1px solid wheat;
+    }
+
+    .user-pics-2{
+        border: 1px solid wheat;
+        border-top: 0px;
+    }
+
+    .user-pics-icons{
+        width: 100%;
+        height: 100%;
+    }
+}

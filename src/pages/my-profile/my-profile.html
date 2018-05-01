@@ -95,14 +95,14 @@
     <ion-row>
       <ion-col col-12>
         <ion-row>
-          <ion-col col-4 class="user-pics"><img class="user-pics-icons" src="assets/imgs/1.jpg"/></ion-col>
-          <ion-col col-4 class="user-pics"><img class="user-pics-icons" src="assets/imgs/2.jpg"/></ion-col>
-          <ion-col col-4 class="user-pics"><img class="user-pics-icons" src="assets/imgs/3.JPG"/></ion-col>
+          <ion-col col-4 class="user-pics"><img class="user-pics-icons" (click)="OpenModel(profileImg1)" [src]=profileImg1/></ion-col>
+          <ion-col col-4 class="user-pics"><img class="user-pics-icons" (click)="OpenModel(profileImg2)" [src]=profileImg2/></ion-col>
+          <ion-col col-4 class="user-pics"><img class="user-pics-icons" (click)="OpenModel(profileImg3)" [src]=profileImg3/></ion-col>
         </ion-row>
         <ion-row>
-            <ion-col col-4 class="user-pics-2"><img class="user-pics-icons" src="assets/imgs/4.JPG"/></ion-col>
-            <ion-col col-4 class="user-pics-2"><img class="user-pics-icons" src="assets/imgs/5.JPG"/></ion-col>
-            <ion-col col-4 class="user-pics-2"><img class="user-pics-icons" src="assets/imgs/6.jpg"/></ion-col>
+            <ion-col col-4 class="user-pics-2"><img class="user-pics-icons" (click)="OpenModel(profileImg4)" [src]=profileImg4/></ion-col>
+            <ion-col col-4 class="user-pics-2"><img class="user-pics-icons" (click)="OpenModel(profileImg5)" [src]=profileImg5/></ion-col>
+            <ion-col col-4 class="user-pics-2"><img class="user-pics-icons" (click)="OpenModel(profileImg6)" [src]=profileImg6/></ion-col>
           </ion-row>
       </ion-col>
     </ion-row>
@@ -113,6 +113,7 @@
   </ion-content>
 <!-- 
   Example 
+  https://www.youtube.com/watch?v=ACYu94hLg4I
   https://www.edatingdoc.com/online-dating-profile-examples/
   https://www.wyzant.com/match/tutor/87230826?search_id=3a67c5cf-8ada-4c48-b4a1-3a6d007def44
   https://fontawesome.com/icons?d=gallery&q=rate

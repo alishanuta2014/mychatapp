@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 
-/**
- * Generated class for the MyProfilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -17,7 +11,20 @@ export class MyProfilePage {
 
   userBio: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  profileImg1: string;
+  profileImg2: string;
+  profileImg3: string;
+  profileImg4: string;
+  profileImg5: string;
+  profileImg6: string;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController) {
+    this.profileImg1 = 'assets/imgs/1.jpg';
+    this.profileImg2 = 'assets/imgs/2.jpg';
+    this.profileImg3 = 'assets/imgs/3.jpg';
+    this.profileImg4 = 'assets/imgs/4.jpg';
+    this.profileImg5 = 'assets/imgs/5.jpg';
+    this.profileImg6 = 'assets/imgs/6.jpg';
   }
 
   ionViewDidLoad() {
@@ -32,6 +39,14 @@ export class MyProfilePage {
             elements[key].style.padding = '0';
         });
     }
+  }
+
+  OpenModel(newPic){
+    const pic = {
+      "pic": newPic,
+    };
+    const myModal = this.modal.create('ModalPage', { data: pic });
+    myModal.present();
   }
 
 }
